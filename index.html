@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>khalil mshkaf</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            background-color: #333;
+        }
+        header a{
+            color: black;
+        }
+        #logobox{
+            width: 30%;
+            height: 100%;
+            background-color: black;
+            float: right;  
+        }
+        #h1{
+            float: left;
+            line-height: 100px;
+            padding: 0 25px;
+            color: white;
+        }
+        #logo{
+            height:100%;
+            border-radius:50% ;
+        }
+        nav{
+            width: 70%;
+        }
+        nav a{
+            text-decoration: none;
+            list-style-type: none;
+            color: white;
+            font-weight: bold;
+            display: inline-block;
+        }
+        nav a:hover{
+            background-color: red;
+            width:100%;
+            height: 100%;
+        }
+        nav li{
+            display: inline-block;
+            line-height: 100px;
+            width: 312px;
+            text-align: center;
+        }
+        main{
+            width: 100%;
+            height: 500px;
+            background-color: black;
+            border-top:1px solid white;
+            animation-name: main;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes main{
+            0%{
+                background-color: #300;
+            }
+            25%{
+                background-color: #305;
+            }
+            50%{
+                background-color: #310;
+            }
+            75%{
+                background-color: #315;
+            }
+            100%{
+                background-color: #320;
+            }
+        }
+        aside{
+            width: 30%;
+            height: 500px;
+            background-color: #333;
+            text-align: center;
+            float: left;
+        }
+        #video{
+            width: 90%;
+            height: 75%;
+        }
+        #h1aside{
+            color: black;
+            background-color: white;
+            padding: 2px 0px;
+            margin: 6px 0px;
+        }
+        aside a{
+            text-decoration: none;
+        }
+        aside div{
+            width: 100%;
+            border-bottom: 3px solid red;
+            padding: 5px 0px;
+        }
+        aside div img{
+            width: 60px;
+            height: 60px;
+        }
+        #article{
+            width: 70%;
+            height: 500px;
+            float: right;
+            position: relative;
+        }
+        #box{
+            text-align: center;
+            width: 500px;
+            height: 200px;
+            background-color: wheat;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position: relative;
+            padding: 10px;
+        }
+        #box a{
+            text-decoration: none;
+        }
+        #box #aa:hover{
+            text-decoration: 1px underline black;
+        }
+        #box1{
+            display: block;
+            width:250px ;
+            height:50px ;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            margin: 20px 0px;
+        }
+        #h11{
+            padding: 15px 0px;
+            border-bottom: 5px solid red;
+            font-style: oblique;
+        }
+        #img1{
+            width: 50px;
+            height: 50px;
+            float: right;
+        }
+        #p1{
+            width: 200px;
+            height: 25px;
+            color: black;
+        }
+        #box2{
+            width:185px ;
+            height: 25px;
+            position: relative;
+            border: 1px solid black;
+        }
+        #bot1{
+            width: 150px;
+            height: 25px;
+            background-color: red;
+            border: 0px;
+            position: absolute;
+            left: 19%;
+            text-align: center;
+            cursor: pointer;
+        }
+        #p2{
+            float: left;
+            width: 50px;
+            text-align: left;
+            line-height: 25px;
+        }
+        footer{
+            width: 100%;
+            height: 400px;
+            background-color: #333;
+            float: left;
+            border-top: 1px solid white;
+            text-align: center;
+        }
+        footer img{
+            width: 350px;
+            height: 180px;
+            margin: 8px;
+        }
+        @media only screen and (max-width:1400px){
+            nav li{
+                width: 265px;
+            }
+            nav{
+                width: 65%;
+            }
+            #logobox{
+                width: 35%;
+            }
+            aside{
+                width: 35%;
+            }
+            #article{
+                width: 65%;
+            }
+        }
+        @media only screen and (max-width:1250px){
+            nav li{
+                width: 200px;
+            }
+            nav{
+                width: 60%;
+            }
+            #logobox{
+                width: 40%;
+            }
+            aside{
+                width: 40%;
+            }
+            #article{
+                width: 60%;
+            }
+        }
+        @media only screen and (max-width:1123px){
+            nav li{
+                width: 160px;
+            }
+            nav{
+                width: 55%;
+            }
+            #logobox{
+                width: 45%;
+            }
+            aside{
+                width: 45%;
+            }
+            #article{
+                width: 55%;
+            }
+            footer img{
+            width: 300px;
+            height: 180px;
+            margin: 8px;
+            }
+        }
+        @media only screen and (max-width:973px){
+            nav li{
+                width: 130px;
+            }
+            nav{
+                width: 55%;
+            }
+            #logobox{
+                width: 45%;
+            }
+            aside{
+                width: 50%;
+            }
+            #article{
+                width: 50%;
+            }
+            #box{
+            width: 350px;
+            height: 200px;
+            }
+            footer img{
+            width: 250px;
+            height: 180px;
+            margin: 8px;
+            }
+        }
+        @media only screen and (max-width:830px){
+            nav li{
+                width: 100px;
+            }
+            nav{
+                width: 50%;
+            }
+            #logobox{
+                width: 50%;
+            }
+            aside{
+                width: 60%;
+            }
+            #article{
+                width: 40%;
+            }
+            #box{
+            width: 250px;
+            height: 200px;
+            }
+            footer img{
+            width: 200px;
+            height: 180px;
+            margin: 8px;
+            }
+        }
+        @media only screen and (max-width:690px){
+            header{
+                height: auto;
+            }
+            #logobox{
+                width: 100%;
+                text-align: center;
+            }
+            #logo,#h1{
+                float: none;
+            }
+            #logo{
+                width: 250px;
+                height: 250px;
+            }
+            nav{
+                width: 100%;
+                text-align: center;
+            }
+            nav li{
+                width: 150px;
+            }
+            aside{
+                width: 100%;
+            }
+            article{
+                width: 100%;
+            }
+            #box{
+                transform: translate(-110%,-60%);
+            }
+            footer img{
+            width: 125px;
+            height: 180px;
+            margin: 8px;
+            }
+            body{
+                background-color: black;
+            }
+        }
+        @media only screen and (max-width:500px){
+            #box{
+                transform: translate(-83%,-45%);
+                width: 300px;
+            }
+            footer img{
+            width: 80px;
+            height: 140px;
+            margin: 10px;
+        }
+        nav{
+            text-align: center;
+        }
+        nav li{
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <span id="logobox">
+            <a href="https://www.youtube.com/channel/UCBNZ0VoN2u_4NT8kbmGgUzQ/playlists" target="_blank"><img src="logo.jpg" alt="error" id="logo"></a>
+            <a href="https://www.youtube.com/channel/UCBNZ0VoN2u_4NT8kbmGgUzQ/playlists" target="_blank"><h1 id="h1">Khalil Mshkaf</h1></a>
+        </span>
+        <nav>
+            <ul id="cc">
+                <li><a href="https://www.youtube.com/channel/UCBNZ0VoN2u_4NT8kbmGgUzQ?view_as=subscriber" target="_blank">الصفحة الرئيسية </a></li>
+                <li><a href="https://www.youtube.com/@CoderShiyar/videos" target="_blank">الفيديوهات</a></li>
+                <li><a href="https://www.youtube.com/@CoderShiyar/playlists" target="_blank">قوائم التشغيل</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <video id="video" src="css.mp4" controls loop autoplay preload="metadata" poster="coder.jpg"></video>
+            <div>
+                <a href="https://www.youtube.com/channel/UCBNZ0VoN2u_4NT8kbmGgUzQ?view_as=subscriber" target="_blank"><img src="facebook.png"></a>
+                <a href="https://www.youtube.com/channel/UCBNZ0VoN2u_4NT8kbmGgUzQ?view_as=subscriber" target="_blank"><img src="youtube.png"></a>
+                <a href="https://www.youtube.com/channel/UCBNZ0VoN2u_4NT8kbmGgUzQ?view_as=subscriber" target="_blank"><img src="twitter.png"></a>
+                <a href="https://www.youtube.com/channel/UCBNZ0VoN2u_4NT8kbmGgUzQ?view_as=subscriber" target="_blank"><img src="telegram.png"></a>
+            </div>
+            <a href=""> <h1 id="h1aside" dir="rtl">تعلم لغة CSS مجانا وبالاحترافية مع المهندس شيار </h1></a>
+        </aside>
+        <article id="article">
+            <div id="box">
+                <h1 id="h11">طالب هندسة نظم الالكترونية</h1>
+                <div id="box1">
+                <a href="https://www.youtube.com/channel/UCBNZ0VoN2u_4NT8kbmGgUzQ?view_as=subscriber" target="_blank"><img src="coder.jpg" id="img1"></a>
+                <a href="https://www.youtube.com/channel/UCBNZ0VoN2u_4NT8kbmGgUzQ?view_as=subscriber" target="_blank" id="aa"><p id="p1">(khail mshkaf)خليل مشكاف</p></a>
+                <div id="box2">
+                    <p id="p2">+999</p>
+                    <a href="https://www.youtube.com/channel/UCBNZ0VoN2u_4NT8kbmGgUzQ?view_as=subscriber" target="_blank"><button type="button" id="bot1" title="اشترك في قناتنا لتعلم البرمجة مجانا">YouTube</button></a> 
+                </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div>
+            <a href="https://www.youtube.com/watch?v=Wn3bVMLYHhs&list=PLMTdZ61eBnyrnapIyOphXAkIcR5DDOGkz" target="_blank"><img src="html.jpg"></a>
+            <a href="https://www.youtube.com/watch?v=eN8JBvxdwME&list=PLMTdZ61eBnyoxjc9Prw0uhwgp6YZ2-_sg" target="_blank"><img src="css.jpg"></a>
+            <a href="https://www.youtube.com/watch?v=3httXb8WHvc&list=PLMTdZ61eBnyoZi9kwFl_-5IQhrJsmJIB5" target="_blank"><img src="bootstrap.jpg"></a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=g6tuPUqc3ew&list=PLMTdZ61eBnyp1nMM8mGRzpwuu6FNxFy0D" target="_blank"><img src="js.jpg"></a>
+            <a href="https://www.youtube.com/watch?v=S0DmG9LhpWA&list=PLMTdZ61eBnyol1gLHHgsiQbcOayNljG4_" target="_blank"><img src="java.jpg"></a>
+            <a href="https://www.youtube.com/watch?v=ykluYs8iOEc&list=PLMTdZ61eBnypdGHUkZ3f52wTDRywLQo4l" target="_blank"><img src="android.jpg"></a>
+        </div>
+    </footer>
+</body>
+</html>
